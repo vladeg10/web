@@ -21,17 +21,27 @@ input[type=submit]:hover {
 }
 input[type=submit]:active{
     cursor: pointer;
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(72, 72, 72);
 }
 .header {
     text-align: right;
 }
-.input-error{
+.input-error {
+    border: 2px solid #bdbdbd;
+    border-radius: 0.5rem;
     border-color: red;
-    border-width: 6px;
+    color: red;
+}
+.error-name-message {
+    position: relative;
+    top: 2px;
+    text-align: center;
 
 }
 
-.input-normal{
-    border-color:rgb(0, 0, 0);
+.error-pass-message {
+    position: relative;
+    top: 2px;
+    text-align: center;
+
 }
