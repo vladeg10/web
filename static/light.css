@@ -1,0 +1,18 @@
+body{
+    background-color: white;
+    color: black;
+}
+.userimg{
+    vertical-align:middle;
+    content:url("/user.png");
+}
+.passwordimg{
+    vertical-align:middle;
+    content:url("/password.png");
+}
+.header {
+    padding: 1rem;
+    background-color: #bbbbbb;
+    border-bottom: black;
+    border-bottom-width: thin;
+}-

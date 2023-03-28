@@ -13,7 +13,10 @@ form {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 8px;
+    gap: 36px;
+    padding: 2rem;
+    border: 2px solid;
+    border-color: grey;
 }
 input[type=submit]:hover {
     cursor: pointer;
@@ -24,11 +27,12 @@ input[type=submit]:active{
     background-color: rgb(72, 72, 72);
 }
 .header {
+    display: flex ;
     text-align: right;
+    flex-direction: column;
 }
 .input-error {
     border: 2px solid #bdbdbd;
-    border-radius: 0.5rem;
     border-color: red;
     color: red;
 }
@@ -36,12 +40,15 @@ input[type=submit]:active{
     position: relative;
     top: 2px;
     text-align: center;
-
+    color: red;
 }
 
 .error-pass-message {
     position: relative;
     top: 2px;
     text-align: center;
-
+    color: red;
+}
+input[type="checkbox"] {
+    accent-color: gray;
 }

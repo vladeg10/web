@@ -1,0 +1,18 @@
+body{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+.userimg{
+    vertical-align:middle;
+    content:url("/user-darkmode.png");
+}
+.passwordimg{
+    vertical-align:middle;
+    content:url("/password-darkmode.png");
+}
+.header {
+    padding: 1rem;
+    background-color: #707070;
+    border-bottom: white;
+    border-bottom-width: thin;
+}

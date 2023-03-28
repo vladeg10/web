@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="light.css" id="theme-link">
 </head>
-<body>
+<body >
 <div class="header">
   Web-Technology
   <div class="theme">
-    <input type="checkbox"/>
-    Darktheme
+    <input type="checkbox" id = "theme-check" onchange="ChangeTheme()"/>
+    Dark theme
   </div>
 </div>
 <div class ="container">
@@ -18,7 +19,7 @@
   <form action="/reg-data" method="post">
     <div id="name-input-container">
       <label for="username-input">
-        <img style="vertical-align:middle" alt="" src="user.png"/>
+        <img class="userimg" alt=""/>
       </label>
       <input type="text"
              id="username-input"
@@ -30,7 +31,7 @@
     </div>
     <div id="password-input-container">
       <label for="password-input">
-      <img style="vertical-align:middle" alt="" src="password.png"/>
+      <img class="passwordimg" alt=""/>
       </label>
       <input type="password"
              id="password-input"

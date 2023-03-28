@@ -9,26 +9,6 @@ let inputValue;
 
 nameInput.addEventListener("input", ()=> {
     inputValue = nameInput.value
-    if (!inputValue || inputValue.length < 1 || inputValue.length > 12)
-    {
-        nameInput.className = "input-error"
-
-        pname.className = "error-name-message";
-        pname.textContent = "Username should be no less than 3 symbols";
-        if (!document.querySelector(".error-name-message"))
-        {
-            document.querySelector("#name-input-container").appendChild(pname);
-        }
-    }
-    else
-    {
-        nameInput.className = "correct-input"
-        if (document.querySelector(".error-name-message")) {
-            document.querySelector(".error-name-message").parentNode.removeChild(document.querySelector(".error-name-message"));
-        }
-    }
-})
-nameInput.addEventListener("blur", ()=> {
     if (!inputValue || inputValue.length < 3)
     {
         nameInput.className = "input-error"
@@ -72,24 +52,21 @@ passInput.addEventListener("input", ()=> {
 })
 
 
-passInput.addEventListener("blur", ()=> {
-    if (!inputValue || inputValue.length < 5 )
-    {
-        passInput.className = "input-error"
 
-        ppass.className = "error-pass-message";
-        ppass.textContent = "Password should be no less than 5 symbols";
-        if (!document.querySelector(".error-pass-message"))
-        {
-            document.querySelector("#pass-input-container").appendChild(ppass);
-        }
-    }
-    else
-    {
-        passInput.className = "correct-input"
-        if (document.querySelector(".error-pass-message")) {
-            document.querySelector(".error-pass-message").parentNode.removeChild(document.querySelector(".error-pass-message"));
-        }
-    }
-})
+    const link = document.getElementById("theme-link");
 
+    function ChangeTheme() {
+        let light = "light.css";
+        let dark = "dark.css";
+
+        let currTheme = link.getAttribute("href");
+        let theme = "";
+
+        if (currTheme == light) {
+            currTheme = dark;
+        } else {
+            currTheme = light;
+        }
+
+        link.setAttribute("href", currTheme);
+    }
