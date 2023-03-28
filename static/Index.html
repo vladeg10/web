@@ -15,8 +15,8 @@
 </div>
 <div class ="container">
   <h1>Registration form</h1>
-  <form>
-    <div>
+  <form action="/reg-data" method="post">
+    <div id="name-input-container">
       <label for="username-input">
         <img style="vertical-align:middle" alt="" src="user.png"/>
       </label>
@@ -25,11 +25,10 @@
              placeholder="Username"
              minlength="3"
              maxlength="12"
-             pattern="[a-zA-Z0-9]{3-12}"
              required
              name = "username"/>
     </div>
-    <div>
+    <div id="password-input-container">
       <label for="password-input">
       <img style="vertical-align:middle" alt="" src="password.png"/>
       </label>
@@ -38,7 +37,6 @@
              placeholder="Password"
              minlength="5"
              maxlength="20"
-             pattern="[a-zA-Z0-9]{5,25}$"
              required
              name = "password"/>
     </div>
