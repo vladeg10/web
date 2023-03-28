@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="header">
+  Web-Technology
+  <div class="theme">
+    <input type="checkbox"/>
+    Darktheme
+  </div>
+</div>
+<div class ="container">
+  <h1>Registration form</h1>
+  <form>
+    <div>
+      <label for="username-input">
+        <img style="vertical-align:middle" alt="" src="user.png"/>
+      </label>
+      <input type="text"
+             id="username-input"
+             placeholder="Username"
+             minlength="3"
+             maxlength="12"
+             pattern="[a-zA-Z0-9]{3-12}"
+             required
+             name = "username"/>
+    </div>
+    <div>
+      <label for="password-input">
+      <img style="vertical-align:middle" alt="" src="password.png"/>
+      </label>
+      <input type="password"
+             id="password-input"
+             placeholder="Password"
+             minlength="5"
+             maxlength="20"
+             pattern="[a-zA-Z0-9]{5,25}$"
+             required
+             name = "password"/>
+    </div>
+    <div>
+      <label for ="user-type-input">Select user type</label>
+      <select id="user-type-input">
+       <option value="Admin">Admin</option>
+       <option value="User">User</option>
+      </select>
+    </div>
+    <div>
+      <input type = "submit" value ="Register" id="submit-input"/>
+    </div>
+  </form>
+</div>
+<script type="text/javascript" src="/script.js">
+</script>
+</body>
+</html>
