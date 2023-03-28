@@ -15,7 +15,7 @@ form {
     text-align: center;
     gap: 36px;
     padding: 2rem;
-    border: 2px solid #-;
+    border: 2px solid;
     border-color: grey;
 }
 input[type=submit]:hover {
