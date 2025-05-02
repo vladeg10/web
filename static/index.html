@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Форма</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+<div class="header">
+    Веб-технологии
+    <div class="theme">
+    <input type="checkbox" onchange="handleChange(this.checked)"/>
+    Темная тема
+    </div>
+</div>
+
+<div class="container">
+    <h1>Форма регистрации</h1>
+    <form action="/reg-data" method="post">
+        <div class="form-input" id="name-input-container">
+            <label for="name-input"> Введите своё имя: </label>
+            <input id="name-input"
+                   type="text" 
+                   placeholder="Имя"
+                   minlength="1"
+                   maxlength="10"
+                   pattern="[A-Za-zА-Яа-я]{1-10}"
+                   required
+                   name = "username"/>
+        </div>
+        <div class="form-input" id="pass-input-container">
+            <label for="pass-input"> Введите пароль: </label>
+            <input id="pass-input" 
+                   type="password"
+                   placeholder="Пароль"
+                   minlength="6"
+                   maxlength="25" 
+                   pattern="^[\w~'`!@#№?$%^&*()=+>|/\\.,:;\[\]{} \x22-]{6,25}$" 
+                   required
+                   name = "password"/>
+        </div>
+        <div class="form-input">
+            <label for="user-type-input">Выберите ваш пол: </label>
+            <select id="user-type-input" name="select_gender">
+                <option value="man"> Мужской </option>
+                <option value="woman"> Женский </option>
+                <option value="another"> Другой </option>
+            </select>
+        </div>
+        <input class="custom-btn btn-1" type="submit" value="Отправить"/>
+    </form>
+</div>
+<script type="text/javascript" src="/script.js">
+</script>
+</body>
+</html>
+

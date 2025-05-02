@@ -1,0 +1,3 @@
+{"username":"yjukyu","password":"1234gbrt","select_gender":"man"}
+{"username":"tbtybtyb","password":"tybtybty","select_gender":"man"}
+{"username":"trbtyn","password":"rbrtbtybt","select_gender":"another"}
